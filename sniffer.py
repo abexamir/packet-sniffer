@@ -14,6 +14,7 @@
 import socket
 from networking import *
 
+
 def sniff():
     while True:
         data, address = conn.recvfrom(65535)
