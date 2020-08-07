@@ -15,9 +15,6 @@ import socket
 from networking import *
 
 def sniff():
-    conn = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(0x0003))
-    log = Pcap('log.pcap')
-
     while True:
         data, address = conn.recvfrom(65535)
         dst_mac, src_mac, eth_proto, data = ether(data)
@@ -107,7 +104,10 @@ def sniff():
 
 
 if is_root():
+    conn = socket.socket(socket.AF_PACKET, socket.SOCK_RAW, socket.ntohs(0x0003))
+    log = Pcap('log.pcap')
     sniff()
-
+    log.close()
+    conn.close()
 else:
     print("root access is necessary")
