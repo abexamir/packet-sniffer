@@ -1,5 +1,3 @@
-
-
 # sniffer.py
 * Python3 based packet sniffer to sniff and log different kind of packets.
 * It can sniff Ethernet Frames, ARP Packets, IPv4 packets, TCP and UDP segments, ICMP, HTTP and DNS protocols.
@@ -10,5 +8,5 @@
 
 # Usage
 ```bash
-python3 sniffer.py
+sudo python3 sniffer.py
 ```
