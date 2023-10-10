@@ -4,9 +4,9 @@
 * Saves the capture logs in a file named log.pcap in the same directory as the program.
 * Libraries used: socket, struct, time, os, textwrap.
 * Must be run as root.
-* Python Virtual Environment included.
 
 # Usage
 ```bash
+pip install -r requirements.txt
 sudo python3 sniffer.py
 ```
