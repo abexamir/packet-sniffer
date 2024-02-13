@@ -5,11 +5,6 @@
 # Saves the capture logs in a file named log.pcap in the same directory as the program.
 # Libraries used: socket, struct, time, os, textwrap.
 # Must be run as root.
-# Python Virtual Environment included.
-
-# A project for Computer Networks I Course 98-2 semester at Isfahan University of Technology.
-# Instructor: Dr. Manshaei.
-# Programmed by Mohammad Serati Aligudarzi - Student. No: 9427363 - E-Mail: abexamir@gmail.com.
 
 import socket
 from networking import *
